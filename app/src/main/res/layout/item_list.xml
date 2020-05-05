@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/complete_click"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/uom_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Item 1"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/bar_code_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Item 1"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/price_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Item 1"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Light_gray"
+        />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">VanSale</string>
+
+    <!-- HOME -->
+
+    <string name="home_option_one">Customer</string>
+    <string name="home_option_two">Sales Order</string>
+    <string name="home_option_three">Sales Invoice</string>
+    <string name="home_option_four">Collection</string>
+    <string name="home_option_five">Transfer</string>
+    <string name="home_option_six">Sync</string>
+    <string name="home_option_seven">Logout</string>
+    <string name="title_activity_collection_main">CollectionMainActivity</string>
+
+    <string name="copyright">Copyright 2018-2019</string>
+    <string name="assetLabel">Current Freezer # :</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

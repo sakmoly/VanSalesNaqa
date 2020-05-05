@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Home -->
+
+    <dimen name="home_layout_margin_top">20dp</dimen>
+    <dimen name="home_layout_margin_bottom">25dp</dimen>
+    <dimen name="home_text_margin_top">10dp</dimen>
+    <dimen name="home_circular_padding">18dp</dimen>
+    <dimen name="home_text_size">13sp</dimen>
+    <dimen name="home_icon_size">25dp</dimen>
+
+    <dimen name="swipeWidth">85dp</dimen>
+
+
+    <!-- Setting -->
+
+    <dimen name="setting_label_text_size">13sp</dimen>
+    <dimen name="setting_layout_margin_top">10dp</dimen>
+    <dimen name="setting_edittext_text_size">13sp</dimen>
+    <dimen name="setting_edittext_height">35dp</dimen>
+    <dimen name="setting_edittext_margin_top">5dp</dimen>
+    <dimen name="setting_edittext_padding_left">10dp</dimen>
+    <dimen name="setting_btn_margin_left">10dp</dimen>
+    <dimen name="setting_btn_margin_right">10dp</dimen>
+
+
+    <!-- Sync popup -->
+
+    <dimen name="popup_circular_padding">12dp</dimen>
+    <dimen name="popup_circular_padding_head">14dp</dimen>
+    <dimen name="popup_text_size">11sp</dimen>
+    <dimen name="popup_text_size_head">12sp</dimen>
+    <dimen name="popup_tick_image_size">15sp</dimen>
+    <dimen name="popup_tick_image_size_head">19sp</dimen>
+    <dimen name="popup_complete_layout_margin">5dp</dimen>
+    <dimen name="popup_view_margin_top">10dp</dimen>
+    <dimen name="popup_view_margin_bottom">10dp</dimen>
+    <dimen name="sync_icon_size">21dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- collection -->
+    <dimen name="collection_layout_margin_top">5dp</dimen>
+
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.van.sale.vansale">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_van_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_van_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/HomeTheme" />
+        <activity
+            android:name=".activity.CustomerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.NewCustomerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CustomerEditActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CustomerDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.SalesOrderActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.SalesOrderDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.SalesOrderAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.SalesOrderItemListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.CartActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.OrderDetailSelectedListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.CustomerSearchActivity"
+            android:configChanges="screenSize|keyboardHidden"
+            android:screenOrientation="fullSensor"
+            tools:replace="android:screenOrientation"
+            android:stateNotNeeded="true"
+
+            android:theme="@style/OtherTheme" />
+        <activity android:name=".webclass" />
+        <activity
+            android:name=".activity.SalesOrderInvoiceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.SalesInvoiceAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.IsReturnActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.InvoiceItemListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.InvoiceItemListAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.SalesInvoiceDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.InvoiceDetailItemListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.HomeItemListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <!--
+            <activity
+            android:name=".activity.CaptureActivityPortrait"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        -->
+        <activity
+            android:name=".activity.CollectionActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.InvoiceDetailMoreItemListAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme" />
+        <activity
+            android:name=".activity.CollectionMainActivity"
+            android:label="@string/title_activity_collection_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.CollectionDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme"/>
+        <activity android:name=".activity.DailyReportActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/OtherTheme"/>
+        <activity
+            android:name=".DeviceListActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog"></activity>
+
+        <activity
+            android:name="com.van.sale.vansale.zebraPrinter.BluetoothDiscovery"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false"
+            android:authorities="${applicationId}">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths"/>
+
+        </provider>
+        <service android:name=".SyncData.AutoSyncTimerService"/>
+    </application>
+
+</manifest>

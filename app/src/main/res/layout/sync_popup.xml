@@ -1,0 +1,1466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/orderpopupround"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Vansale"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Light_blue"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/master_data_click"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/popup_complete_layout_margin"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/home_icon_background_shape"
+                                android:gravity="center"
+                                android:padding="@dimen/popup_circular_padding_head">
+
+                                <ImageView
+                                    android:layout_width="@dimen/home_icon_size"
+                                    android:layout_height="@dimen/home_icon_size"
+                                    android:src="@drawable/ic_cloud_download" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/home_text_margin_top"
+                                android:text="Master Data"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/popup_text_size_head" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="center_horizontal|bottom">
+
+                            <ImageView
+                                android:id="@+id/master_click_image"
+                                android:layout_width="@dimen/popup_tick_image_size_head"
+                                android:layout_height="@dimen/popup_tick_image_size_head"
+                                android:src="@drawable/ic_circle_fill" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                        android:layout_marginTop="@dimen/popup_view_margin_top"
+                        android:background="@color/colorPrimary" />
+
+
+                    <LinearLayout
+                        android:id="@+id/transaction_click"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/popup_complete_layout_margin"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/home_icon_background_shape"
+                                android:gravity="center"
+                                android:padding="@dimen/popup_circular_padding_head">
+
+                                <ImageView
+                                    android:layout_width="@dimen/home_icon_size"
+                                    android:layout_height="@dimen/home_icon_size"
+                                    android:src="@drawable/ic_cloud_upload" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/home_text_margin_top"
+                                android:text="Transaction"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/popup_text_size_head" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="center_horizontal|bottom">
+
+                            <ImageView
+                                android:id="@+id/transaction_image_click"
+                                android:layout_width="@dimen/popup_tick_image_size_head"
+                                android:layout_height="@dimen/popup_tick_image_size_head"
+                                android:src="@drawable/ic_circle_fill" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- <View
+                     android:layout_width="match_parent"
+                     android:layout_height="10dp"
+                     android:background="@color/Light_gray" />-->
+
+
+                <LinearLayout
+                    android:id="@+id/master_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginBottom="10dp"
+                         android:gravity="center">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="========X===X========"
+                             android:textColor="@color/Light_gray"
+                             />
+
+                     </LinearLayout>-->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/Light_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:id="@+id/master_warehouse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_warehouse" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="Warehouse"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/warehouse_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary" />
+
+
+                        <LinearLayout
+                            android:id="@+id/master_currency"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_money" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="Currency"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/currency_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary" />
+
+                        <LinearLayout
+                            android:id="@+id/master_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_items" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="Item"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/item_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                        android:layout_marginTop="@dimen/popup_view_margin_top"
+                        android:background="@color/colorPrimary" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:id="@+id/master_price_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_price_tag" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="Price List"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/price_list_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary" />
+
+
+                        <LinearLayout
+                            android:id="@+id/master_payment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_collection" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="Payment"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/master_payment_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary" />
+
+                        <LinearLayout
+                            android:id="@+id/master_customer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_customer_home" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="Customer"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/master_customer_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                        android:layout_marginTop="@dimen/popup_view_margin_top"
+                        android:background="@color/colorPrimary" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:id="@+id/master_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_customer_home" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="User"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/master_user_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_customer_home" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="@string/home_option_one"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_customer_home" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="@string/home_option_one"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <!-- ================================== -->
+
+
+                <LinearLayout
+                    android:id="@+id/transaction_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginBottom="10dp"
+                         android:gravity="center">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="========X===X========"
+                             android:textColor="@color/Light_gray"
+                             />
+
+                     </LinearLayout>-->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/Light_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:id="@+id/transaction_customer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_customer_home" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="@string/home_option_one"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/transaction_customer_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary" />
+
+
+                        <LinearLayout
+                            android:id="@+id/transaction_sales_order"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_sales_order" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="Sales Order"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/transaction_sales_order_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary" />
+
+                        <LinearLayout
+                            android:id="@+id/transaction_sales_invoice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_sales_invoice" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="Sales Invoice"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/transaction_sales_invoice_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                        android:layout_marginTop="@dimen/popup_view_margin_top"
+                        android:background="@color/colorPrimary" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:id="@+id/transaction_payment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_collection" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="Payment"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/transaction_payment_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary" />
+
+
+                        <LinearLayout
+                            android:id="@+id/transaction_transfer_in"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_transfer" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="Transfer In"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/transaction_trans_in_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary" />
+
+                        <LinearLayout
+                            android:id="@+id/transaction_transfer_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_transfer" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="Transfer Out"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:id="@+id/transaction_trans_out_click"
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                        android:layout_marginTop="@dimen/popup_view_margin_top"
+                        android:background="@color/colorPrimary"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_customer_home" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="@string/home_option_one"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_customer_home" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="@string/home_option_one"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/popup_view_margin_bottom"
+                            android:layout_marginTop="@dimen/popup_view_margin_top"
+                            android:background="@color/colorPrimary" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/popup_complete_layout_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/home_icon_background_shape"
+                                    android:gravity="center"
+                                    android:padding="@dimen/popup_circular_padding">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/sync_icon_size"
+                                        android:layout_height="@dimen/sync_icon_size"
+                                        android:src="@drawable/ic_customer_home" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/home_text_margin_top"
+                                    android:text="@string/home_option_one"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/popup_text_size" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal|bottom">
+
+                                <ImageView
+                                    android:layout_width="@dimen/popup_tick_image_size"
+                                    android:layout_height="@dimen/popup_tick_image_size"
+                                    android:src="@drawable/ic_tick_circle" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/Light_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/setting_layout_margin_top"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/cancel_request"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_backd"
+                        android:text="CANCEL"
+                        android:textColor="@color/White"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/sync_request"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_backd"
+                        android:text="SYNC"
+                        android:textColor="@color/White"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- <TextView
+         android:layout_width="match_parent"
+         android:layout_height="3dp"
+         android:layout_alignParentBottom="true"
+         android:background="@color/colorPrimary" />-->
+
+
+</RelativeLayout>

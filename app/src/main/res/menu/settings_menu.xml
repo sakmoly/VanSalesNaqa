@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Default"
+    android:orderInCategory="10"
+    app:showAsAction="never"
+    android:id="@+id/UpdateDefaultSettings"/>
+ <item android:title="Clear Transactions"
+    android:orderInCategory="11"
+    app:showAsAction="never"
+    android:id="@+id/ClearTransactions"/>
+
+</menu>

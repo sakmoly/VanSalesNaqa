@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1bd96d</color>
+    <color name="colorPrimaryDark">#1bd96d</color>
+    <color name="colorAccent">#1bd96d</color>
+
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="Orange">#ecbf7f</color>
+    <color name="Red">#f51515</color>
+    <color name="Transparent">#00FFFFFF</color>
+    <color name="Light_gray">#dcdcdc</color>
+    <color name="Light_blue">#bbb8cde2</color>
+    <color name="Light_green">#b6f4d1</color>
+    <!--<color name="Light_gray">#abc7c6c6</color>-->
+    <color name="gray">#f7878686</color>
+
+    <color name="swipeoption_green">#36CF8E</color>
+    <color name="swipeoption_blue">#3693D0</color>
+    <color name="swipeoption_purple">#ff1744</color>
+
+
+
+    <color name="background">#f3f3f3</color>
+
+    <color name="app_orange">#fe8113</color>
+
+    <!-- Dialog color -->
+
+    <color name="dialog_error_background">#ff1744</color>
+    <color name="dialog_network_error_background">#202ae7</color>
+    <color name="dialog_background">#1bd96d</color>
+
+
+</resources>

@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+
+    <!--<item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/ic_business_board"
+        android:title="Cart"
+        app:actionLayout="@layout/custom_notification_item_layout"
+        app:showAsAction="always"/>-->
+
+    <!-- <item
+         android:id="@+id/action_search"
+         android:icon="@drawable/ic_add_post"
+         android:title="Cart"
+         app:showAsAction="always"/>-->
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="search"
+        appcompat:actionViewClass="android.support.v7.widget.SearchView"
+        appcompat:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_scan"
+        android:icon="@drawable/ic_qr_code"
+        android:title="scanner"
+        appcompat:showAsAction="always" />
+
+
+</menu>

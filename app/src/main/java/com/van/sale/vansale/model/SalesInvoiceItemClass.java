@@ -1,0 +1,190 @@
+package com.van.sale.vansale.model;
+
+public class SalesInvoiceItemClass {
+
+
+    int KEY_ID, SALES_INVOICE_ID;
+    String INVOICE_ITEM_WAREHOUSE, INVOICE_ITEM_ITEMNAME, INVOICE_ITEM_STOCK_UOM, INVOICE_ITEM_ITEMCODE, INVOICE_ITEM_SALES_ORDER, INVOICE_ITEM_SO_DETAIL,INVOICE_ITEM_ASSET;
+    Float INVOICE_ITEM_QTY, INVOICE_ITEM_RATE, INVOICE_ITEM_PRICELIST_RATE, INVOICE_ITEM_DISCOUNT_PERCENTAGE, INVOICE_ITEM_TAX_RATE, INVOICE_ITEM_TAX_AMOUNT,SALES_GROSS,SALES_NET,SALES_VAT,SALES_TOTAL;
+
+    public SalesInvoiceItemClass() {
+    }
+
+
+    public SalesInvoiceItemClass(int SALES_INVOICE_ID, String INVOICE_ITEM_WAREHOUSE, String INVOICE_ITEM_ITEMNAME, String INVOICE_ITEM_STOCK_UOM, String INVOICE_ITEM_ITEMCODE, String INVOICE_ITEM_SALES_ORDER, String INVOICE_ITEM_SO_DETAIL, Float INVOICE_ITEM_QTY, Float INVOICE_ITEM_RATE, Float INVOICE_ITEM_PRICELIST_RATE, Float INVOICE_ITEM_DISCOUNT_PERCENTAGE, Float INVOICE_ITEM_TAX_RATE, Float INVOICE_ITEM_TAX_AMOUNT,Float SALES_GROSS,Float SALES_NET,Float SALES_VAT,Float SALES_TOTAL,String INVOICE_ITEM_ASSET ) {
+
+        this.SALES_INVOICE_ID = SALES_INVOICE_ID;
+        this.INVOICE_ITEM_WAREHOUSE = INVOICE_ITEM_WAREHOUSE;
+        this.INVOICE_ITEM_ITEMNAME = INVOICE_ITEM_ITEMNAME;
+        this.INVOICE_ITEM_STOCK_UOM = INVOICE_ITEM_STOCK_UOM;
+        this.INVOICE_ITEM_ITEMCODE = INVOICE_ITEM_ITEMCODE;
+        this.INVOICE_ITEM_SALES_ORDER = INVOICE_ITEM_SALES_ORDER;
+        this.INVOICE_ITEM_SO_DETAIL = INVOICE_ITEM_SO_DETAIL;
+        this.INVOICE_ITEM_QTY = INVOICE_ITEM_QTY;
+        this.INVOICE_ITEM_RATE = INVOICE_ITEM_RATE;
+        this.INVOICE_ITEM_PRICELIST_RATE = INVOICE_ITEM_PRICELIST_RATE;
+        this.INVOICE_ITEM_DISCOUNT_PERCENTAGE = INVOICE_ITEM_DISCOUNT_PERCENTAGE;
+        this.INVOICE_ITEM_TAX_RATE = INVOICE_ITEM_TAX_RATE;
+        this.INVOICE_ITEM_TAX_AMOUNT = INVOICE_ITEM_TAX_AMOUNT;
+        this.SALES_GROSS = SALES_GROSS;
+        this.SALES_NET = SALES_NET;
+        this.SALES_VAT = SALES_VAT;
+        this.SALES_TOTAL = SALES_TOTAL;
+        this.INVOICE_ITEM_ASSET=INVOICE_ITEM_ASSET;
+
+    }
+
+
+    public Float getSALES_GROSS() {
+        return SALES_GROSS;
+    }
+
+    public void setSALES_GROSS(Float SALES_GROSS) {
+        this.SALES_GROSS = SALES_GROSS;
+    }
+
+    public Float getSALES_NET() {
+        return SALES_NET;
+    }
+
+    public void setSALES_NET(Float SALES_NET) {
+        this.SALES_NET = SALES_NET;
+    }
+
+    public Float getSALES_VAT() {
+        return SALES_VAT;
+    }
+
+    public void setSALES_VAT(Float SALES_VAT) {
+        this.SALES_VAT = SALES_VAT;
+    }
+
+    public Float getSALES_TOTAL() {
+        return SALES_TOTAL;
+    }
+
+    public void setSALES_TOTAL(Float SALES_TOTAL) {
+        this.SALES_TOTAL = SALES_TOTAL;
+    }
+
+    public int getKEY_ID() {
+        return KEY_ID;
+    }
+
+    public void setKEY_ID(int KEY_ID) {
+        this.KEY_ID = KEY_ID;
+    }
+
+    public int getSALES_INVOICE_ID() {
+        return SALES_INVOICE_ID;
+    }
+
+    public void setSALES_INVOICE_ID(int SALES_INVOICE_ID) {
+        this.SALES_INVOICE_ID = SALES_INVOICE_ID;
+    }
+
+    public String getINVOICE_ITEM_WAREHOUSE() {
+        return INVOICE_ITEM_WAREHOUSE;
+    }
+
+    public void setINVOICE_ITEM_WAREHOUSE(String INVOICE_ITEM_WAREHOUSE) {
+        this.INVOICE_ITEM_WAREHOUSE = INVOICE_ITEM_WAREHOUSE;
+    }
+
+    public String getINVOICE_ITEM_ITEMNAME() {
+        return INVOICE_ITEM_ITEMNAME;
+    }
+
+    public void setINVOICE_ITEM_ITEMNAME(String INVOICE_ITEM_ITEMNAME) {
+        this.INVOICE_ITEM_ITEMNAME = INVOICE_ITEM_ITEMNAME;
+    }
+
+    public String getINVOICE_ITEM_STOCK_UOM() {
+        return INVOICE_ITEM_STOCK_UOM;
+    }
+
+    public void setINVOICE_ITEM_STOCK_UOM(String INVOICE_ITEM_STOCK_UOM) {
+        this.INVOICE_ITEM_STOCK_UOM = INVOICE_ITEM_STOCK_UOM;
+    }
+
+    public String getINVOICE_ITEM_ITEMCODE() {
+        return INVOICE_ITEM_ITEMCODE;
+    }
+
+    public void setINVOICE_ITEM_ITEMCODE(String INVOICE_ITEM_ITEMCODE) {
+        this.INVOICE_ITEM_ITEMCODE = INVOICE_ITEM_ITEMCODE;
+    }
+
+    public String getINVOICE_ITEM_ASSET() {
+        return INVOICE_ITEM_ASSET;
+    }
+
+    public void setINVOICE_ITEM_ASSET(String INVOICE_ITEM_ASSET) {
+        this.INVOICE_ITEM_ASSET = INVOICE_ITEM_ASSET;
+    }
+
+
+    public String getINVOICE_ITEM_SALES_ORDER() {
+        return INVOICE_ITEM_SALES_ORDER;
+    }
+
+    public void setINVOICE_ITEM_SALES_ORDER(String INVOICE_ITEM_SALES_ORDER) {
+        this.INVOICE_ITEM_SALES_ORDER = INVOICE_ITEM_SALES_ORDER;
+    }
+
+    public String getINVOICE_ITEM_SO_DETAIL() {
+        return INVOICE_ITEM_SO_DETAIL;
+    }
+
+    public void setINVOICE_ITEM_SO_DETAIL(String INVOICE_ITEM_SO_DETAIL) {
+        this.INVOICE_ITEM_SO_DETAIL = INVOICE_ITEM_SO_DETAIL;
+    }
+
+    public Float getINVOICE_ITEM_QTY() {
+        return INVOICE_ITEM_QTY;
+    }
+
+    public void setINVOICE_ITEM_QTY(Float INVOICE_ITEM_QTY) {
+        this.INVOICE_ITEM_QTY = INVOICE_ITEM_QTY;
+    }
+
+    public Float getINVOICE_ITEM_RATE() {
+        return INVOICE_ITEM_RATE;
+    }
+
+    public void setINVOICE_ITEM_RATE(Float INVOICE_ITEM_RATE) {
+        this.INVOICE_ITEM_RATE = INVOICE_ITEM_RATE;
+    }
+
+    public Float getINVOICE_ITEM_PRICELIST_RATE() {
+        return INVOICE_ITEM_PRICELIST_RATE;
+    }
+
+    public void setINVOICE_ITEM_PRICELIST_RATE(Float INVOICE_ITEM_PRICELIST_RATE) {
+        this.INVOICE_ITEM_PRICELIST_RATE = INVOICE_ITEM_PRICELIST_RATE;
+    }
+
+    public Float getINVOICE_ITEM_DISCOUNT_PERCENTAGE() {
+        return INVOICE_ITEM_DISCOUNT_PERCENTAGE;
+    }
+
+    public void setINVOICE_ITEM_DISCOUNT_PERCENTAGE(Float INVOICE_ITEM_DISCOUNT_PERCENTAGE) {
+        this.INVOICE_ITEM_DISCOUNT_PERCENTAGE = INVOICE_ITEM_DISCOUNT_PERCENTAGE;
+    }
+
+    public Float getINVOICE_ITEM_TAX_RATE() {
+        return INVOICE_ITEM_TAX_RATE;
+    }
+
+    public void setINVOICE_ITEM_TAX_RATE(Float INVOICE_ITEM_TAX_RATE) {
+        this.INVOICE_ITEM_TAX_RATE = INVOICE_ITEM_TAX_RATE;
+    }
+
+    public Float getINVOICE_ITEM_TAX_AMOUNT() {
+        return INVOICE_ITEM_TAX_AMOUNT;
+    }
+
+    public void setINVOICE_ITEM_TAX_AMOUNT(Float INVOICE_ITEM_TAX_AMOUNT) {
+        this.INVOICE_ITEM_TAX_AMOUNT = INVOICE_ITEM_TAX_AMOUNT;
+    }
+}
